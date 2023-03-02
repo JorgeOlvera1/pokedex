@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./img/logoPagina.png" type="image/x-icon">
+
+  <title>Buscar pokémon</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    #ultimo+div {
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedor2">
+    <div class="contenedor3">
+      <img src="./img/logoPokemon2.png" alt="Logo de Pokémon" class="img">
+    </div>
+
+    <div class="contenedor4">
+      <div class="contenedor5">
+        <input type="text" id="input" placeholder="Escribe aquí...">
+
+        <button onclick="buscar()" id="boton">Buscar</button>
+
+        <div id="resultado">
+          <h2>Información del pokémon</h2>
+          <h2 id="nombre"></h2>
+          <h2 id="id"></h2>
+          <img id="imagen1">
+          <img id="imagen2">
+          <h2 id="peso"></h2>
+          <h2 id="altura"></h2>
+
+        </div>
+      </div class="contenedor5">
+    </div>
+
+  </div class="contenedor2">
+
+  <div id="ultimo"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

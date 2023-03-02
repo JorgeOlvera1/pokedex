@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box; /*si se establece un ancho o alto en un elemento y se añaden bordes o rellenos, el tamaño total del elemento no cambiará.*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: #f6cf57;
+}
+
+body {
+    display: flex; /*un elemento que contiene otros elementos (llamados elementos flex) y los alinea de manera flexible*/
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    background-image: url(./img/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor3 {
+    margin: 0 auto; /*para que se centre automáticamente*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /*para evitar que los elementos se vuelvan demasiado grandes y se salgan de la pantalla en dispositivos con resoluciones pequeñas*/
+    width: 50%;
+}
+
+.contenedor3 img {
+    width: 180%;
+    max-width: 180%;
+    object-fit: contain; /*la imagen se escalará para que toda la imagen quepa dentro del contenedor, manteniendo las proporciones originales.*/
+}
+
+
+.contenedor4 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /*el elemento se posiciona de manera relativa a su posición normal en la página.*/
+}
+
+.contenedor5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /*los elementos se ajusten automáticamente al tamaño del contenedor y se evite el desbordamiento.*/
+}
+
+#input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #f6cf57;
+    border-radius: 4px;
+    font-size: 18px;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+::placeholder {
+    color: #f6cf57;
+}
+
+#boton {
+    width: 100%;
+    max-width: 120px;
+    background-color: transparent;
+    color: #f6cf57;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #f6cf57;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#resultado {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #f6cf57;
+    border-radius: 4px;
+    font-size: 18px;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column; /*los elementos dentro del formulario se coloquen uno debajo del otro en lugar de lado a lado.*/
+    }
+
+    #input,
+    #boton {
+        width: 100%;
+        max-width: none; /*elementos se ajustarán automáticamente al ancho disponible y no tendrán un ancho máximo limitado.*/
+    }
+}
